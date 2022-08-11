@@ -7,7 +7,7 @@ use crate::Route;
 
 const ELLIPSIS: &str = "\u{02026}";
 
-#[derive(Serialize, Deserialize, PartialEq, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 pub struct PageQuery {
     pub page: usize,
 }
